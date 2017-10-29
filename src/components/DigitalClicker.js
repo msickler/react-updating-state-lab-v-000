@@ -5,4 +5,16 @@ export default class DigitalClicker extends React.Component {
     super()
     this.state = {timesClicked: 0}
   }
+
+  handleClick = (event) => {
+    this.setState({
+      timesClicked: ++this.state.timesClicked
+    })
+  }
+
+  render() {
+    return(
+      <button onClick={this.handleClick}>{this.state.timesClicked}</button>
+    )
+  }
 }
