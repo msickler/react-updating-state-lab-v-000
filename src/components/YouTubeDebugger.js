@@ -16,7 +16,9 @@ export default class YouTubeDebugger extends React.Component {
 
   handleClick = (event) => {
     this.setState({
-      bitrate: 12
+      settings {
+        ...this.state.settings, bitrate: 12
+      }
     })
   }
 
